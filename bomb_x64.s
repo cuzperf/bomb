@@ -1,5 +1,5 @@
 
-bomb:     file format elf64-x86-64
+bomb_x64:     file format elf64-x86-64
 
 
 Disassembly of section .init:
@@ -277,12 +277,6 @@ Disassembly of section .text:
   400dcc:	48 89 05 95 29 20 00 	mov    %rax,0x202995(%rip)        # 603768 <infile>
   400dd3:	48 85 c0             	test   %rax,%rax
   400dd6:	75 41                	jne    400e19 <main+0x79>
-  return __fprintf_chk (__stream, __USE_FORTIFY_LEVEL - 1, __fmt,
-			__va_arg_pack ());
-}
-
-__fortify_function int
-printf (const char *__restrict __fmt, ...)
   400dd8:	48 8b 4b 08          	mov    0x8(%rbx),%rcx
   400ddc:	48 8b 13             	mov    (%rbx),%rdx
   400ddf:	be b6 22 40 00       	mov    $0x4022b6,%esi
